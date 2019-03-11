@@ -6,7 +6,7 @@ git_status=$(grep "new code downloaded" ~/jenkins-home/jobs/Git-Check/lastStable
 if [ "$git_status" == "new code downloaded" ]
   then
 	#check for pom.xml file in a latest uploaded folder
-	cd /home/localadmin/UAALACT/IoTVerwaltung/Java-Test
+	cd /file/path/for/git-server
 
 	newest_folder=$(ls -t | head -n 1)
 
