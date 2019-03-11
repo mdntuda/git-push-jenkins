@@ -2,11 +2,11 @@ import paramiko
 import os
 import sys
 
-hostname = 'capfloor20'
-password = 'CapFloor'
+hostname = '#enter_your_host_name_here'
+password = '#the_password_for_host'
 source = sys.argv[1]
 bundle_name = sys.argv[2]
-destination = '/home/root/apache-karaf/deploy'
+destination = '#the_path_of_Karaf_deploy_folder'
 
 username = 'root'
 port = 22
