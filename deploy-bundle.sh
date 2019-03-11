@@ -9,7 +9,7 @@ status_maven=$(grep "deploy bundle" /home/localadmin/jenkins-home/jobs/maven-sou
 if [ "$status_maven" == "deploy bundle" ]
   then
     echo "Now deploy bundle!"
-    cd /home/localadmin/UAALACT/IoTVerwaltung/Java-Test/
+    cd /path-to-your-git-server
     
     #take the newest folder, since it contains changes
     newest_folder=$(ls -td -- */ | head -n 1)
