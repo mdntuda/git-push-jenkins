@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/localadmin/UAALACT
+cd /filepath/to/your/git/server/folder
 git_state=$(git pull)
 if [[ $git_state = *"up-to-date"* ]]
   then
