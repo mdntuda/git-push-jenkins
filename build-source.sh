@@ -3,17 +3,14 @@
 value=$(cat /home/localadmin/jenkins-home/jobs/Git-Check/builds/lastSuccessfulBuild/log | grep -c "nothing to do")
 if [ $value -eq 1 ]
   then
-	echo "muster ist drin"
+	echo "pattern is inside"
   else
-	echo "muster nicht drin, so we compile the code!"
-	cd /home/localadmin/UAALACT/IoTVerwaltung/Java-Test/
+	echo "pattern not inside, so we compile the code!"
+	cd /filepath/to/Java-Project/Java-Test/
 
 	#now we check for latest folder which updated by git
 	newest_folder=$(find * -type d -prune | tail -n 1)
 	echo "Last folder uploaded is: $newest_folder"
-
-	#save last access time to a file -> save its name
-	#the idea is too complicated: sudo apt-get install inotifywait-tools
 
 	#check whether it is really a folder
 	if [ -d "$newest_folder" ]
