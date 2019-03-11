@@ -1,8 +1,8 @@
 import paramiko
 import os
 
-hostname = 'capfloor20'
-password = 'CapFloor'
+hostname = '#put_your_host_name'
+password = '#password_of_your_host'
 
 
 username = 'root'
