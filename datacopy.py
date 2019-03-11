@@ -15,7 +15,7 @@ print("Source Path " + source)
 print(os.listdir(source))
 sourceFiles = os.listdir(source)
 print("Source Files: " + str(sourceFiles))
-print("Nachschauen, ob die Source existiert: " + str(os.path.exists(source)))
+print("Check if sources exist: " + str(os.path.exists(source)))
 
 client = paramiko.SSHClient()
 client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
