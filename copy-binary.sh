@@ -3,7 +3,7 @@
 #check if binary files are modified
 #if yes -> copy to source
 
-cd /home/localadmin/UAALACT/IoTVerwaltung/Java-Test
+cd /file_path/of/your/git-server
 
 newest_folder=$(find * -type d -prune | tail -n 1)
 
