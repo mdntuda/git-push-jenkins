@@ -1,5 +1,5 @@
 # git-push-jenkins
-When a developer pushs his code to git server. The code will be compiled by Maven and copied to a remote machine(PC, Notebook, VM, Pi etc.)
+When a developer pushs his code as a Maven project to the given git server. The code will be compiled by Maven on the git server and copied to a remote machine for the running Karaf instance.
 
 ### After installing successfully Tomcat and Jenkins and create an user account inside Jenkins. Now on the VM, there is an account with username: #your-choosing-username and password: #your-password
 
