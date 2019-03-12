@@ -185,30 +185,30 @@ Now run Tomcat with following commands:
 
 iii) We now run jenkins with help of Tomcat. For that you download the war version from the homepage: https://jenkins.io/download/
 
-Version(2.89.3) with the command in your terminal: :~$wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+Version(2.89.3) with the command in your terminal: ```:~$wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war ```
 
                (Warning: Make sure that the jenkins.war file is not corrupt! One method to try it out is run the jenkins file with: java jar jenkins.war, it will create the .jenkins folder in your homefolder, so delete this folder with: rm -rf .jenkins/ If the file is corrupt java will complain)
 
-Change the mode of your jenkins.war file with: sudo chmod ugx+rxw jenkins.war
+Change the mode of your jenkins.war file with: ```sudo chmod ugx+rxw jenkins.war ```
 
-Copy (or move) the file: jenkins.war to the webapps folder of Tomcat: sudo cp jenkins.war /opt/tomcat/webapps
+Copy (or move) the file: jenkins.war to the webapps folder of Tomcat: ```sudo cp jenkins.war /opt/tomcat/webapps```
 
-Now change the group of the file with: sudo chgrp tomcat jenkins.war and the right of this file: sudo chown ug+wrx jenkins.war
+Now change the group of the file with: sudo chgrp tomcat jenkins.war and the right of this file: ```sudo chown ug+wrx jenkins.war```
 
 Jenkins will create a folder jenkins for you. The folder should appears very soon after you copy it into webapps folder of Tomcat. 
 
-The last step is to set a folder where jenkins will save all the files. With: sudo mkdir /opt/jenkins-home
+The last step is to set a folder where jenkins will save all the files. With: ```sudo mkdir /opt/jenkins-home ```
 
-With sudo chgrp R tomcat /opt/jenkinshome to give the user tomcat access to this folder where jenkins will write all the configuration files inside it.
-Set the environment variable: nano ~/.bashrc in its last line append:    export JENKINS_HOME = /opt/jenkins-home
-For some reasons my terminal cannot deal with it, so I made it globally with:    sudo nano /etc/profile.d/glob_env_variables.sh and put in it 
-export JENKINS_HOME=/opt/jenkins-home
+With sudo ```chgrp R tomcat /opt/jenkinshome``` to give the user tomcat access to this folder where jenkins will write all the configuration files inside it.
+Set the environment variable: ```nano ~/.bashrc``` in its last line append:    ```export JENKINS_HOME = /opt/jenkins-home```
+For some reasons my terminal cannot deal with it, so I made it globally with:    ```sudo nano /etc/profile.d/glob_env_variables.sh``` and put in it 
+```export JENKINS_HOME=/opt/jenkins-home```
 
-Even after it, it still doesn't work, so I edit my tomcat.service file: sudo nano /etc/systemd/system/tomcat.service 
+Even after it, it still doesn't work, so I edit my tomcat.service file: ```sudo nano /etc/systemd/system/tomcat.service``` 
 There you see one line which begins with a shebang (#), please remove it.
 
-Since we change on the tomcat.service file, we load it again with: sudo systemctl daemon-reload
-Restart the tomcat process again: sudo systemctl restart tomcat
+Since we change on the tomcat.service file, we load it again with: ```sudo systemctl daemon-reload```
+Restart the tomcat process again: ```sudo systemctl restart tomcat```
 
 Now everything its running fine and you can call your jenkins in your broser with: http://your-ip-adress:8080/jenkins
 
