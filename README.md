@@ -1,7 +1,13 @@
-# git-push-jenkins
-When a developer pushs his code as a Maven project to the given git server. The code will be compiled by Maven on the git server and copied to a remote machine for the running Karaf instance.
+# git_push-maven_compile_copy_to_karaf
+When a developer pushs his code as a Maven project to the given git server. The code will be compiled by Maven on the git server and copied to a remote machine for the running Karaf instance. With the help of Jenkins as a CI/CD tool.
+
+<b>Assumption:</b> Ubuntu/Debian Server with Git server, Python 3, Jenkins successfully installed. Communication between Server/Client is working. Developers work with Maven projects.
+
+<b>Hint:</b> The installation of Jenkins is described in the file ```Jenkins-Installation.md``` in this repository.
 
 ### After installing successfully Tomcat and Jenkins and create an user account inside Jenkins. Now on the VM, there is an account with username: #your-choosing-username and password: #your-password
+
+Open on your client a browser. Type in the link to your server:  ```http://your-ip-adress:8080/jenkins```
 
 It's time to create our chain. First go to "New Item" on the left handside of Jenkins Dashboard:
 ![Alt Tag](https://user-images.githubusercontent.com/7670731/54187840-b1d47580-44ae-11e9-8f66-42f896bebb17.png)
