@@ -4,17 +4,17 @@ When a developer pushs his code to git server. The code will be compiled by Mave
 ## After installing successfully Tomcat and Jenkins and create an user account inside Jenkins. Now on the VM, there is an account with username: #your-choosing-username and password: #your-password
 
 It's time to create our chain. First go to "New Item" on the left handside of Jenkins Dashboard:
-https://user-images.githubusercontent.com/7670731/54187840-b1d47580-44ae-11e9-8f66-42f896bebb17.png
+[!alt text](https://user-images.githubusercontent.com/7670731/54187840-b1d47580-44ae-11e9-8f66-42f896bebb17.png)
 
 
 Then this will apppear:
-https://user-images.githubusercontent.com/7670731/54187845-b39e3900-44ae-11e9-80ff-80bbd549f0ef.png
+[!alt text](https://user-images.githubusercontent.com/7670731/54187845-b39e3900-44ae-11e9-80ff-80bbd549f0ef.png)
 
 
 Choose "Freestyle project" and give the project the name. 
 
 Since my first "job" in Jenkins is "Git-Check", I give "Git-Check" as name of a job → click on OK.
-https://user-images.githubusercontent.com/7670731/54187848-b567fc80-44ae-11e9-9a04-b326e6f91ec7.png
+[!alt text] (https://user-images.githubusercontent.com/7670731/54187848-b567fc80-44ae-11e9-9a04-b326e6f91ec7.png)
 
 
 
