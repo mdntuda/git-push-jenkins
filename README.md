@@ -1,4 +1,4 @@
-# git_push-maven_compile_copy_to_karaf
+# git_push-maven_compile-copy_to_karaf
 When a developer pushs his code as a Maven project to the given git server. The code will be compiled by Maven on the git server and copied to a remote machine for the running Karaf instance. With the help of Jenkins as a CI/CD tool.
 
 <b>Assumption:</b> Ubuntu/Debian Server with Git server, Python 3, Jenkins successfully installed. Communication between Server/Client is working. Developers work with Maven projects.
