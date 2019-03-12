@@ -1,7 +1,7 @@
 # git-push-jenkins
 When a developer pushs his code to git server. The code will be compiled by Maven and copied to a remote machine(PC, Notebook, VM, Pi etc.)
 
-## After installing successfully Tomcat and Jenkins and create an user account inside Jenkins. Now on the VM, there is an account with username: #your-choosing-username and password: #your-password
+### After installing successfully Tomcat and Jenkins and create an user account inside Jenkins. Now on the VM, there is an account with username: #your-choosing-username and password: #your-password
 
 It's time to create our chain. First go to "New Item" on the left handside of Jenkins Dashboard:
 ![Alt Tag](https://user-images.githubusercontent.com/7670731/54187840-b1d47580-44ae-11e9-8f66-42f896bebb17.png)
