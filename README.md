@@ -47,6 +47,6 @@ and the job Deploy-Bundle needs: ```deploy-bundle.sh```
 The shell script ```deploy-bundle.sh``` needs a Python-script to be able to deploy the bundle to a client running Karaf, the file name is ```datacopy.py```
 
 
-After creating these three jobs. Just run the first job and the chain will be automatically complete. 
+After creating these three jobs you start the first job and the chain will be automatically complete. 
 
 Have fun!
